@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 @media only screen and (max-width: 1250px){
     .container
     {
@@ -17,6 +19,8 @@
         padding: 0 10px;
     }
 
+    /* ---- S E R V I C E S ---- */
+
     #services
     {
         height: auto;
@@ -34,6 +38,8 @@
     {
         text-align: center;
     }
+
+    /* ---- F O O T E R ---- */
 
     footer > .content > .container
     {
@@ -75,6 +81,9 @@
 }
 
 @media only screen and (max-width: 840px){
+
+    /* ---- T O P B A R ---- */
+
     #topbar > .container
     {
         justify-content: center;
@@ -83,6 +92,8 @@
     {
         display: none;
     }
+
+    /* ---- M A I N - M E N U ---- */
 
     #main-menu > .container
     {
@@ -156,6 +167,7 @@
         height:auto;
     }
     
+    /* ---- I N T R O ---- */
 
     #intro .details
     {
@@ -166,13 +178,15 @@
     }
     #intro .details > h1
     {
-        font-size: 6vw;
+        font-size: 3.4em;
     }
     #intro .details > .btn-request
     {
         margin-left: auto;
         margin-right: auto;
     }
+
+    /* ---- S E R V I C E S ---- */
 
     #services > .container
     {
@@ -195,6 +209,8 @@
         padding: 0;
     }
 
+    /* ---- P A R T N E R S ---- */
+
     #partners .logo
     {
         height: 5vw;
@@ -202,11 +218,14 @@
 }
 
 @media only screen and (max-width: 740px){
+
+    /* ---- F O O T E R ---- */
+
     footer .more-info
     {
-        font-size: 5vw;
+        font-size: 1.2em;
         row-gap: 16px;
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     footer .widget *> li, 
@@ -249,5 +268,96 @@
     footer .more-info > .social span
     {
         display: none;
+    }
+
+
+    /* ---- F O R M - C O N T A C T ---- */
+
+    .window
+    {
+        padding: 10px;
+    }
+    #form-contact
+    {
+        width: 100%;
+        margin-top: 0;
+        overflow-y: auto;
+        flex-direction: column-reverse;
+    }
+    #form-contact > .content > form
+    {
+        width: auto;
+    }
+    #form-contact > .image
+    {
+        width: auto;
+        background: rgb(var(--quaternary));
+    }
+    #form-contact > .image::after
+    {
+        background-image: linear-gradient(90deg, rgb(var(--primary)), transparent);
+    }
+}
+
+
+@media only screen and (max-width: 460px){
+    body
+    {
+        font-size: 5vw;
+    }
+
+
+    /* ---- T O P B A R ---- */
+
+    #topbar
+    {
+        font-size: .8em;
+    }
+
+
+    /* ---- M A I N - M E N U ---- */
+
+    #main-menu .logo,
+    #main-menu .open_m-mobile > .icon
+    {
+        height: 12vw;
+    }
+
+
+    /* ---- I N T R O ---- */
+
+    #intro .details > h1
+    {
+        font-size: 1.4em;
+    }
+
+
+    /* ---- C O M M I T M E N T ---- */
+
+    table *> tr
+    {
+        flex-direction: column;
+    }
+
+
+    /* ---- W H A T S A P P - A R E A ---- */
+
+    .whatsapp-chat
+    {
+        width: calc(100vw - 20px);
+    }
+    .whatsapp-chat > header .picture
+    {
+        width: 14vw;
+        height: 14vw;
+    }
+    .whatsapp-chat > .main > button
+    {
+        padding: 3vw 4vw;
+    }
+    .whatsapp-chat > .main > button::before
+    {
+        width: 9vw;
+        height: 9vw;
     }
 }
