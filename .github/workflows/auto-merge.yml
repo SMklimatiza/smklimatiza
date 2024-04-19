@@ -9,11 +9,8 @@ jobs:
   merge:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: Checkout code
         uses: actions/checkout@v2
         
       - name: Merge changes
-        run: |
-          git checkout main  # Mude para a branch principal do repositório fork
-          git pull https://github.com/deiwdofficial/smklimatiza.git main
-          git push origin main
+        uses: pullreminders/merge-me-action@v1
